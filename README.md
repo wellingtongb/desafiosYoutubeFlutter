@@ -1,16 +1,15 @@
 # project
 
-A new Flutter project.
+Projeto de estudos em Flutter, onde irei pegar desafios de criação de interfaces no youtube e reproduzilos.
 
-## Getting Started
+## Fontes de desafios
 
-This project is a starting point for a Flutter application.
+Inicial irei realizar alguns desafios do canal do Pedro Massango - https://www.youtube.com/channel/UCBiJzXGvkuT9aG2Yq8BYYnQ
 
-A few resources to get you started if this is your first Flutter project:
+Playlist com desafios
+https://www.youtube.com/watch?v=31WHkRuMuPw&list=PLum90SMJW-vltQ_ERf3rhjq_UZWJ2enEG
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Pretendo adicionar novos links de desafios conforme for estudando
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Desafios finalizados
+- Tela de login - https://www.youtube.com/watch?v=WmpgYvfUpow&t=2857s
