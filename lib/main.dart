@@ -1,8 +1,9 @@
 import "package:flutter/material.dart";
+import 'package:project/desafioLogin2.dart';
 
 void main(){
   runApp(MaterialApp(
-    home: LoginChallenge(),
+    home: Login2(),
   ));
 }
 
