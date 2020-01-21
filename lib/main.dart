@@ -1,9 +1,10 @@
 import "package:flutter/material.dart";
-import 'package:project/desafioLogin2.dart';
+//import 'package:project/desafioLogin2.dart';
+import 'package:project/paginaPerfil.dart';
 
 void main(){
   runApp(MaterialApp(
-    home: Login2(),
+    home: PaginaPerfil(),
   ));
 }
 

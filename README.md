@@ -14,3 +14,4 @@ Pretendo adicionar novos links de desafios conforme for estudando
 ### Desafios finalizados
 - Tela de login - https://www.youtube.com/watch?v=WmpgYvfUpow&t=2857s
 - Tela de login 2 - https://www.youtube.com/watch?v=T0nl4ZBqmac
+- Tela de perfil - https://www.youtube.com/watch?v=-jvGV7HmvgM
