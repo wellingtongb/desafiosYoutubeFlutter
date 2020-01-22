@@ -44,6 +44,7 @@ flutter:
   assets:
      - images/cntower.jpg  
      - images/cntower2.jpg
+     - images/dartPerfil.jpg
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

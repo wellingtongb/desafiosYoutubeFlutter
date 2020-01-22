@@ -20,6 +20,8 @@ class PaginaPerfil extends StatefulWidget {
 class _PaginaPerfilState extends State<PaginaPerfil> {
 
   final Color green = Color(0xFF1E8161);
+  final double icones = 20;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -54,6 +56,129 @@ class _PaginaPerfilState extends State<PaginaPerfil> {
                 bottomLeft: Radius.circular(30),
                 bottomRight: Radius.circular(30)
               )
+            ),
+            child: Column(
+              children: <Widget>[
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: <Widget>[
+                    Column(   //Coluna da Familiar
+                      children: <Widget>[
+                        Text("Familiar", style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20
+                        ),),
+                        Text("12", style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold
+                        ),)
+                      ],
+                    ),
+                    Container(    //Foto central
+                      width: 120,
+                      height: 120,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: Colors.white,
+                        image: new DecorationImage(
+                          fit: BoxFit.cover,
+                         image: new AssetImage("images/dartPerfil.jpg")
+                        )
+                      ),
+                    ),
+                    Column(
+                      children: <Widget>[
+                        Text("Following", style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20
+                        ),),
+                        Text("18", style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold
+                        ),)
+                      ],
+                    )
+                  ],
+                ),
+                //Fim da Row com Imagem
+                //Texto ID usuário
+                Padding(
+                  padding: const EdgeInsets.only(top: 32.0, right: 17),
+                  child: Text("ID 668754", style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.w300,
+                    fontSize: 15
+                  ),),
+                ),
+                // Inicio texto Nome do usuário
+                Padding(
+                  padding: const EdgeInsets.all(20),
+                  child: Text("Dart Vader da Silva", style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 35,
+                    fontWeight: FontWeight.bold
+                  ),),
+                ),
+                //inicio da ROW dos icones
+                Padding(
+                  padding: const EdgeInsets.only(top: 20.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: <Widget>[
+                      //Icone 1 friends
+                      Column(
+                        children: <Widget>[
+                          Icon(
+                            Icons.people_outline,
+                            color: Colors.white,
+                            size: 35),
+                            Text("Friends", style: TextStyle(
+                              color: Colors.white,
+                            ),)
+                        ],
+                      ),
+                      //Icone 2 Schedule
+                      Column(
+                        children: <Widget>[
+                          Icon(
+                            Icons.schedule,
+                            color: Colors.white,
+                            size: 35),
+                            Text("Schedule", style: TextStyle(
+                              color: Colors.white,
+                            ),)
+                        ],
+                      ),
+                      //Icone 3 video
+                      Column(
+                        children: <Widget>[
+                          Icon(
+                            Icons.ondemand_video,
+                            color: Colors.white,
+                            size: 35),
+                            Text("Video", style: TextStyle(
+                              color: Colors.white,
+                            ),)
+                        ],
+                      ),
+                      //Icone 4 Likes
+                      Column(
+                        children: <Widget>[
+                          Icon(
+                            Icons.favorite,
+                            color: Colors.white,
+                            size: 35),
+                            Text("Likes", style: TextStyle(
+                              color: Colors.white,
+                            ),)
+                        ],
+                      ),
+                    ],
+                  ),
+                )
+              ],
             ),
           )
         ],
