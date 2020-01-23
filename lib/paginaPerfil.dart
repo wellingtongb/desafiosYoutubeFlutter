@@ -21,6 +21,7 @@ class _PaginaPerfilState extends State<PaginaPerfil> {
 
   final Color green = Color(0xFF1E8161);
   final double icones = 20;
+  final double textIcones = 16;
 
   @override
   Widget build(BuildContext context) {
@@ -28,6 +29,7 @@ class _PaginaPerfilState extends State<PaginaPerfil> {
       appBar: AppBar(       
         elevation: 0, 
         backgroundColor: green,
+        centerTitle: true,
         title: Text("Profile", 
           style: TextStyle(
             color: Colors.white
@@ -177,6 +179,109 @@ class _PaginaPerfilState extends State<PaginaPerfil> {
                       ),
                     ],
                   ),
+                )
+              ],
+            ),
+          ),
+          //FIm do container verde principal
+          Container(
+            width: MediaQuery.of(context).size.width,
+            height: 253,
+            decoration: BoxDecoration(
+              color: Colors.white
+            ),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                Row(                  
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: <Widget>[
+                    Column(children: <Widget>[
+                      Icon(
+                        Icons.insert_chart,
+                        color: green,
+                        size: 50,
+                      ),
+                      Text("Leaders", style: TextStyle(
+                        color: green,
+                        fontSize: textIcones
+                      ),)
+                    ],
+                    ),
+
+                    Column(children: <Widget>[
+                     Icon(
+                        Icons.trending_up,
+                        color: green,
+                        size: 50,
+                      ),
+                      Text("Level Up", style: TextStyle(
+                        color: green,
+                        fontSize: textIcones
+                      ),)
+                    ],
+                    ),
+
+                    Column(children: <Widget>[
+                      Icon(
+                        Icons.card_giftcard,
+                        color: green,
+                        size: 50,
+                      ),
+                      Text("Gifts", style: TextStyle(
+                        color: green,
+                        fontSize: textIcones
+                      ),)
+                    ],
+                    )
+                  ],
+                ),
+                //Fim da linha 1 do container branco
+                //Incio da linha 2
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: <Widget>[
+                    Column(children: <Widget>[
+                      Icon(
+                        Icons.blur_on,
+                        color: green,
+                        size: 50,
+                      ),
+                      Text("QR Code", style: TextStyle(
+                        color: green,
+                        fontSize: textIcones
+                      ),)
+                    ],
+                    ),
+
+                    Column(children: <Widget>[
+                     Icon(
+                        Icons.watch_later,
+                        color: green,
+                        size: 50,
+                      ),
+                      Text("Daily bonus", style: TextStyle(
+                        color: green,
+                        fontSize: textIcones
+                      ),)
+                    ],
+                    ),
+
+                    Column(children: <Widget>[
+                      IconButton(
+                         onPressed: (){},
+                         highlightColor: Colors.white,
+                        icon: Icon(Icons.nature_people),
+                        color: green,
+                        iconSize: 50,
+                      ),
+                      Text("Visitors", style: TextStyle(
+                        color: green,
+                        fontSize: textIcones
+                      ),)
+                    ],
+                    )
+                  ],
                 )
               ],
             ),
